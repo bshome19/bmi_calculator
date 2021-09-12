@@ -1,5 +1,5 @@
 import 'package:bmi_calculator/constants.dart';
-import 'package:bmi_calculator/views/input_page.dart';
+import 'package:bmi_calculator/views/bottom_button.dart';
 import 'package:bmi_calculator/views/reusable_card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
