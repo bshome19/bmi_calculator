@@ -74,6 +74,7 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           DataCards(
+            divisons: 25,
             dataName: "HEIGHT",
             data: height,
             unitName: "cm",
@@ -86,6 +87,7 @@ class _InputPageState extends State<InputPage> {
             },
           ),
           DataCards(
+            divisons: 15,
             dataName: "WEIGHT",
             data: weight,
             unitName: "kg",
@@ -98,9 +100,10 @@ class _InputPageState extends State<InputPage> {
             },
           ),
           DataCards(
+            divisons: 10,
             dataName: "AGE",
             data: age,
-            unitName: "years",
+            unitName: "year",
             sliderMin: 0,
             sliderMax: 100,
             onChanged: (double newValue) {
@@ -112,7 +115,6 @@ class _InputPageState extends State<InputPage> {
           BottomButton(
             onTap: () {
               Calculator cal = Calculator(height: height, weight: weight);
-
               Navigator.push(
                 context,
                 MaterialPageRoute(

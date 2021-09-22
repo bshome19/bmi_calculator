@@ -34,6 +34,7 @@ class ResultPage extends StatelessWidget {
                   padding: EdgeInsets.all(18.0),
                   child: Text(
                     'Your Result',
+                    textScaleFactor: 3,
                     style: kResultTextStyle,
                   ),
                 ),
@@ -56,6 +57,7 @@ class ResultPage extends StatelessWidget {
                     ),
                     Text(
                       bmiResult,
+                      textScaleFactor: 8,
                       style: kBMITextStyle,
                     ),
                     Padding(

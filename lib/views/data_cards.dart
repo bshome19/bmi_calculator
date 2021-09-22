@@ -11,6 +11,7 @@ class DataCards extends StatelessWidget {
     required this.sliderMin,
     required this.sliderMax,
     required this.onChanged,
+    required this.divisons,
   }) : super(key: key);
 
   final int data;
@@ -19,6 +20,7 @@ class DataCards extends StatelessWidget {
   final double sliderMin;
   final double sliderMax;
   final Function(double)? onChanged;
+  final int divisons;
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +29,16 @@ class DataCards extends StatelessWidget {
         colour: activeCardColour,
         cardChild: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 5),
-            Text(
-              dataName,
-              style: labelStyle,
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 10, 0, 0),
+              child: Text(
+                dataName,
+                textScaleFactor: 1.4,
+                style: labelStyle,
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -55,6 +62,7 @@ class DataCards extends StatelessWidget {
             ),
             SliderTheme(
               data: SliderTheme.of(context).copyWith(
+                valueIndicatorColor: Colors.orange,
                   thumbShape:
                   const RoundSliderThumbShape(enabledThumbRadius: 15.0),
                   overlayShape:
@@ -66,6 +74,8 @@ class DataCards extends StatelessWidget {
                 activeColor: iconColor,
                 inactiveColor: inActiveCardColour,
                 onChanged: onChanged,
+                label: "$data",
+                divisions: divisons,
               ),
             ),
           ],
