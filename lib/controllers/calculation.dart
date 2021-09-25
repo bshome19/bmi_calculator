@@ -16,10 +16,13 @@ class Calculator
 
   getResult()
   {
-    if (_bmi >= 25) {
+    if (_bmi >= 30) {
+      return "Obese";
+    }
+    else if (_bmi >= 25) {
       return "OverWeight";
     }
-    else if (_bmi > 18.5) {
+    else if (_bmi >= 18.5) {
       return "Normal";
     } else {
       return "UnderWeight";
@@ -28,8 +31,11 @@ class Calculator
 
   getColour()
   {
-    if (_bmi >= 25) {
-      return Colors.red;
+    if (_bmi >= 30) {
+        return Colors.red;
+      }
+    else if (_bmi >= 25) {
+      return Colors.deepOrange;
     }
     else if (_bmi > 18.5) {
       return Colors.green;
@@ -40,7 +46,10 @@ class Calculator
 
   advice()
   {
-    if (_bmi >= 25) {
+    if (_bmi >= 30) {
+      return "It's not good for your health, workout daily";
+    }
+    else if (_bmi >= 25) {
       return "Try to do more exercise to be healthy.";
     } else if (_bmi > 18.5) {
       return "Good job, you're healthy. Try to maintain it.";

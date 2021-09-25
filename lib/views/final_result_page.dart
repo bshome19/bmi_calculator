@@ -1,12 +1,12 @@
 import 'package:bmi_calculator/constants.dart';
-import 'package:bmi_calculator/views/bottom_button.dart';
-import 'package:bmi_calculator/views/reusable_card.dart';
+import 'package:bmi_calculator/views/calculate_button.dart';
+import 'package:bmi_calculator/views/card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class ResultPage extends StatelessWidget {
+class FinalResultPage extends StatelessWidget {
 
-  ResultPage({
+  FinalResultPage({
     Key? key,
     required this.bmiResult,
     required this.resultText,
@@ -41,7 +41,7 @@ class ResultPage extends StatelessWidget {
               )),
           Expanded(
               flex: 5,
-              child: ReusableCard(
+              child: Cards(
                 colour: activeCardColour,
                 cardChild: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -76,7 +76,7 @@ class ResultPage extends StatelessWidget {
                 ),
               )),
           Expanded(
-              child: BottomButton(
+              child: CalculateButton(
                 onTap: () => Navigator.of(context).pop(),
                 text: 'CALCULATE AGAIN',
               ))

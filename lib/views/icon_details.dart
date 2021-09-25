@@ -1,8 +1,8 @@
 import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
 
-class IconContent extends StatelessWidget {
-  const IconContent({
+class IconDetails extends StatelessWidget {
+  const IconDetails({
     Key? key,
     required this.icon,
     required this.label,

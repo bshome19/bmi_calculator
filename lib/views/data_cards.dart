@@ -1,5 +1,5 @@
 import 'package:bmi_calculator/constants.dart';
-import 'package:bmi_calculator/views/reusable_card.dart';
+import 'package:bmi_calculator/views/card.dart';
 import 'package:flutter/material.dart';
 
 class DataCards extends StatelessWidget {
@@ -25,7 +25,7 @@ class DataCards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: ReusableCard(
+      child: Cards(
         colour: activeCardColour,
         cardChild: Column(
           mainAxisAlignment: MainAxisAlignment.center,

@@ -1,4 +1,4 @@
-import 'package:bmi_calculator/views/input_page.dart';
+import 'package:bmi_calculator/views/data_input_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -18,7 +18,7 @@ class BMICalculator extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         primaryColor: Colors.black,
       ),
-      home: const InputPage(),
+      home: const DataInputPage(),
     );
   }
 }
