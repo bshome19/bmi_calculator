@@ -1,11 +1,10 @@
 import 'package:bmi_calculator/constants.dart';
 import 'package:bmi_calculator/controllers/calculation.dart';
 import 'package:bmi_calculator/views/calculate_button.dart';
-import 'package:bmi_calculator/views/data_cards.dart';
-import 'package:bmi_calculator/views/icon_details.dart';
-import 'package:bmi_calculator/views/final_result_page.dart';
 import 'package:bmi_calculator/views/card.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:bmi_calculator/views/data_cards.dart';
+import 'package:bmi_calculator/views/final_result_page.dart';
+import 'package:bmi_calculator/views/icon_details.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -28,7 +27,15 @@ class _DataInputPageState extends State<DataInputPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BMI CALCULATOR'),
+        title: const Text(
+          'BMI CALCULATOR',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontStyle: FontStyle.italic,
+            letterSpacing: 3.0,
+            wordSpacing: 15.0,
+          ),
+        ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

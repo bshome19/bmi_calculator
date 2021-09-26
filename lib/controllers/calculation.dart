@@ -47,7 +47,7 @@ class Calculator
   advice()
   {
     if (_bmi >= 30) {
-      return "It's not good for your health, workout daily";
+      return "It's not good for your health, workout daily.";
     }
     else if (_bmi >= 25) {
       return "Try to do more exercise to be healthy.";
