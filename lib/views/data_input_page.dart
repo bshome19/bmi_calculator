@@ -33,7 +33,7 @@ class _DataInputPageState extends State<DataInputPage> {
             fontWeight: FontWeight.bold,
             fontStyle: FontStyle.italic,
             letterSpacing: 3.0,
-            wordSpacing: 15.0,
+            wordSpacing: 14.0,
           ),
         ),
       ),
